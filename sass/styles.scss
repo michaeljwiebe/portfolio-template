@@ -1,0 +1,301 @@
+//UI
+//make it responsive, 3 breaks
+//smaller fonts generally
+
+
+//UX
+//make boxes appropriate size for content
+//add JS hover box-shadow growth or 3D
+//parallax scrolling for images
+//add gif videos of each project
+//add bike animation, fade in contact icons on scroll after animation
+
+@import 'variables';
+@import 'projects';
+@import 'skills';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $font-bubble;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.background-photos{
+    box-shadow: inset 0px 0px 15px 5px $bg-transparent-white;
+}
+
+.background-philly{
+    background-image: url("../img/philly-2x-2.jpg");
+    background-size: cover;
+    height: 950px;
+}
+
+.background-philly2{
+    background-image: url('../img/philly-2x-1.jpg');
+    background-size: cover;
+    height: 1000px;
+}
+
+.bio-info{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.headshot{
+    background-image: url("../img/michaelwiebe.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    background-position-x: -19px;
+    margin: 100px 20px 0;
+    border: 2px solid white;
+}
+
+.basic-info{
+    margin: 220px 20px;
+    text-shadow: -2px 2px antiquewhite;
+}
+
+.name{
+    font-family: $font-mont;
+    font-size: 50px;
+}
+
+.name-first-letter{
+    letter-spacing: -13px;
+}
+
+.title{
+    font-family: $font-titillium;
+    font-size: 30px;
+    text-align: center;
+    background-color: $bg-transparent-white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.text-box{
+    text-align: center;
+    background-color: $box-bg;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 4px white;
+    color: #f7f7f7;
+    text-shadow: 1px 1px black;
+}
+
+.text-box li{
+
+}
+
+.text-box ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.work{
+    text-align: center;
+}
+
+.section-title{
+    font-size: 30px;
+    height: 58px;
+    width: 100%;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: $bg-transparent-white;
+    margin: 40px 0 10px;
+    padding: 12px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.connect{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.links{
+
+}
+
+.connect a{
+    font-size: 100px;
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+    background-color: $bg-transparent-white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.connect a:hover{
+    box-shadow: 5px 5px blue;
+}
+
+.blue-and-white-icon{
+    color: blue;
+}
+
+@media all and (max-width: 1094px){
+    .background-philly2{
+        height: 1500px;
+    }
+}
+
+@media all and (max-width: 830px){
+    .background-philly{
+        height: 840px;
+    }
+
+    .bio-info{
+        justify-content: space-around;
+    }
+
+    .headshot{
+        height: 300px;
+        width: 250px;
+        background-position-x: -19px;
+        margin: 50px 0 0 20px;
+    }
+
+    .basic-info{
+        margin: 95px 0 0 0;
+        width: 300px;
+    }
+
+    .name{
+        font-size: 42px;
+        margin-left: 10px;
+        line-height: 60px;
+        font-family: $font-cabin;
+    }
+
+    .first-name{
+        letter-spacing: 5px;
+        margin-right: 20%;
+    }
+
+    .last-name{
+        width: 80%;
+        text-transform: uppercase;
+        margin-left: 9px;
+        letter-spacing: 17px;
+    }
+
+    .first-name-letter{
+        font-size: 155px;
+        letter-spacing: -18px;
+    }
+
+    .last-name-letter{
+        font-size: 110px;
+        letter-spacing: -23px;
+    }
+
+    .title{
+        font-size: 25px;
+        width: 260px;
+        text-align: center;
+        margin-left: 12px;
+        margin-top: 36px;
+    }
+}
+
+@media all and (min-width: 650px) and (max-width: 830px){
+    .project-container{
+        margin: 1.5vw;
+        padding: 17px;
+    }
+}
+
+@media all and (max-width: 649px){
+    .headshot{
+        height: 200px;
+        width: 150px;
+        margin-left: 0;
+    }
+    .basic-info{
+        margin: 82px 0 0 0;
+        width: 150px;
+    }
+    .name{
+        font-size: 20px;
+        margin-left: 5px;
+        line-height: 33px;
+    }
+    .first-name{
+        letter-spacing: 3px;
+        margin-right: 50%;
+    }
+    .first-name-letter{
+        font-size: 88px;
+        letter-spacing: -6px;
+    }
+    .last-name{
+        width: 80%;
+        text-transform: uppercase;
+        margin-left: 6px;
+        letter-spacing: 9px;
+    }
+    .last-name-letter{
+        font-size: 64px;
+        letter-spacing: -13px;
+    }
+    .title{
+        font-size: 20px;
+        width: 130px;
+        text-align: center;
+        margin-left: 12px;
+        margin-top: 0;
+    }
+    .title-end{
+        display: block;
+    }
+
+    .background-philly{
+        background-image: url('../img/philly-tall-2.jpg');
+        height: 850px;
+    }
+
+    .background-philly2{
+        background-image: url('../img/philly-4x-tall-1-2.jpg');
+        height: 2060px;
+    }
+
+    .project-container{
+        width: 300px;
+        height: auto;
+        display: block;
+        min-height: 260px;
+    }
+
+    .project-description{
+        min-height: 75px;
+    }
+}
+
+@media all and (max-width: 377px){
+    .background-philly{
+        height: 1100px;
+    }
+}
+
+
+.visible{
+  opacity: 1;
+}

@@ -1,0 +1,96 @@
+@import 'variables';
+
+.skills-container{
+    height: 245px;
+    text-align: center;
+}
+
+.skills-list{
+    margin: 0;
+}
+
+.skills-boxes{
+    margin-top: 50px;
+}
+
+.languages{}
+
+.frameworks{}
+
+.other{}
+
+.skill-container{
+    opacity: 0;
+    font-size: 24px;
+    margin: 10px 8px;
+    padding: 5px;
+    max-width: 300px;
+    min-width: 165px;
+    min-height: 147px;
+    transition: 1s;
+}
+
+.skills-list{
+    margin: 0;
+    transition: opacity 0.5s;
+}
+
+.skill-category{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skill-category-overlay{
+    width: 153px;
+    height: 134px;
+    padding-top: 50px;
+    background-color: $bg-transparent-white;
+    color: black;
+    text-shadow: 0 0;
+    border-radius: 5px;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.fade-out{
+    opacity: 0;
+}
+
+.fade-in{
+    opacity: 1;
+}
+
+
+.overlay{
+    background-color: $bg-transparent-white;
+}
+
+.languages-overlay{}
+.frameworks-overlay{}
+.other-skills-overlay{}
+.coming-soon-overlay{}
+
+.languages{
+}
+
+.frameworks{
+}
+
+.other{
+}
+
+
+@media all and (min-width: 620px) and (max-width: 810px){
+    .skills-container{
+        margin: 50px 0;
+    }
+}
+
+@media all and (max-width: 619px){
+    .skill-container{
+        display: block;
+    }
+}
